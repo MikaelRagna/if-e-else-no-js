@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+</head>
+<style>
+    body{
+        background: darkviolet;
+    }
+    div#res{
+        font: normal 20pt arial;
+        color: rgb(5, 53, 5);
+    }
+</style>
+<body>
+    <h1>Brasileiro ou Estrangeiro ?</h1>
+    País natal:
+    <input type="text" name="nac" id="nac">
+    <input type="button" value="verificar" onclick="cliclar()">
+    <div id="res"></div>
+    <script>
+        function cliclar(){
+            var n = document.getElementById('nac')
+            var n2 = (n.value)
+            if (n2 == 'brasil'){
+                res.innerHTML = ('<p>Você é brasileiro<P>')
+            }
+            else{
+                res.innerHTML = ('<p>Você é estrangeiro<p>')
+            }
+        }
+    </script>
+</body>
+</html>
